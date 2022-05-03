@@ -1,0 +1,464 @@
+/* -----------------------------------GLOBAL CSS ---------------------------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    outline: none;
+}
+.btn,h1, h2,h5,h6{
+    text-transform: uppercase;
+}
+h3,h6{
+    text-transform: capitalize;
+}
+h1,h2,h3,h4,h5.h6{
+    font-weight: 100;
+}
+.btn {
+    font-size: 0.875rem;
+    color: white;
+}
+input {
+    font-size: 0.813rem;
+    color: white;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 1.875rem;
+}
+h3 {
+    font-size: 1.625rem;
+}
+h6 {
+    font-size: 0.875rem;
+}
+p {
+    font-size: 0.875rem;
+}
+
+select {
+    background: url("data:image/svg+xml,<svg height='10px' width='10px' viewBox='0 0 16 16' fill='%23000000' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>") no-repeat;
+    background-position: calc(100% - 0.25rem) center !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    padding-right: 1rem !important;
+}
+/* --------------------------------------------navbar----------------------------------------------- */
+.nav-list {
+    display: flex;
+    background-color: white;
+    color: black;
+}
+.nav-list ul {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    margin: 0.625rem;
+    margin-left: 5%;
+    align-items: center;
+}
+.nav-list ul li {
+    padding: 0.625rem;
+}
+.nav-list ul li:hover{
+    /* background-color:rgb(190, 188, 188); */
+    background-color: rgb(78, 46, 46);
+    color: aliceblue;
+    cursor: pointer;
+}
+.right-nav {
+    width: 50%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.right-nav select {
+    margin-left: 18rem;
+    padding: 5px;
+}
+.right-nav select,i:hover{
+    cursor: pointer;
+}
+.right-nav i {
+    margin-left: 0.625rem;
+}
+.fa-user {
+    color: rgb(61, 228, 228);
+}
+.fa-gratipay {
+    color: rgb(168, 21, 46);
+}
+.circle{
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: -2px;
+    justify-content: center;
+    font-size: 12px;
+}
+.background {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ),url('images/background-img-2.jpg') ;
+    background-size: cover;
+}
+.logo {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 25px 70px;
+    border-bottom: 1px solid white;
+}
+.logo h2:hover{
+    cursor: pointer;
+}
+.logo h2 {
+    /* margin-left: 2.5%;*/
+    /* margin-top: 2.5%;  */
+    font-weight:bolder;
+    color: white;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.logo input {
+    /* margin-top: 2.5%;  */
+    width: 100%;
+    padding: 10px;
+    margin-left: 50%;
+    border-radius: 2px;
+    border: 1px solid white;
+    color: black;
+    background: transparent;
+}
+input:focus{
+    outline: none;
+}
+input {
+    color: black;
+}
+::placeholder {
+    color: white;
+    font-weight: 400;
+}
+.intro {
+    margin-top: 195px;
+    margin-left: 110px;
+    color: white;
+}
+.blue-btn {
+    margin-top: 53px;
+    background-color: rgb(7, 7, 172);
+    padding: 16px;
+    color: white;
+    border-style: none;
+    margin-bottom: 282px;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(7, 7, 172);
+    /* background-color: rgb(10, 7, 145); */
+}
+.policy{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 85px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.box {
+    width: 250px;
+}
+.box h5 {
+    color: blue;
+    /* margin-bottom: 15px; */
+    /* padding-top: 10px; */
+    display: flex;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.box p {
+    margin-bottom: 65px;
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 24pt;
+}
+/* -------------------------------product images------------------------------------------------- */
+.products{
+    margin-top: 30px;
+}
+.product-box {
+    margin-left: 10%;
+    margin-right: 10%;
+    --gap: 16px;
+    --num-cols: 4;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    gap: var(--gap);
+}
+.product-box div{
+    position: relative;
+}
+.product-box>div >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product-box h5{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    margin: 6%;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+    color: black;
+}
+.product-box h5:hover{
+    background-color: rgba(138, 132, 132, 0.7);
+    cursor: pointer;
+}
+.image-grid-col-2 {
+    grid-column: span 2;
+}
+.image-grid-row-2 {
+    grid-row: span 2;
+}
+.line-text {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-top: 100px;
+
+}
+.line {
+    width: 32%;
+    height: 0.5px;
+    background-color: gray;
+    border: 0.5px solid rgb(167, 161, 161);
+}
+.text {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.text h2{
+    font-size: 26px;
+}
+.text h5{
+    font-size: 12px;
+}
+
+.trending-products {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+.on-hover-visible{
+    /* visibility: hidden; */
+    position: absolute;
+    top:0;left: 0;right: 0;bottom: 0;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 10px;
+}
+.sale,.sale1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+.sale{
+    right: 0;
+}
+.sale1{
+    left: 0;
+}
+.on-hover-visible div{
+    display: flex;
+    justify-content: center;
+}
+.on-hover-visible h4{
+    margin: 40px;
+}
+.on-hover-visible h4 span{
+    background-color: rgba(3, 2, 34, 0.8);
+    padding: 20px;
+    color: white;
+}
+
+.on-hover-visible:hover{
+    opacity: 1;
+    /* background-color: rgba(0, 0, 0,0.2); */
+}
+
+.trending-products .b:hover{
+    cursor: pointer;
+}
+
+.trending-products .b {
+    margin: 10px;
+    position:relative ;
+}
+.price {
+    margin-top: 10px;
+    display: flex;
+}
+.price h5 {
+    margin-left: auto;
+    margin-right: 0;
+    color: red;
+}
+.trending-products h4 {
+    margin-top: 5px
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.title .info {
+    margin: auto;
+    text-align: center;
+    
+}
+.title {
+    margin-bottom: 110px;
+    line-height: 22pt;
+}
+.title .line{
+    width: 33%;
+}
+.title h2{
+    font-size: 26px;
+}
+.info h2,h5{
+    margin-left: auto;
+    margin-right: auto;
+}
+.blog-articles {
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.blog-articles .c {
+    display: flex;
+    width: 50%;
+}
+.blog-articles img:hover{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+.details h4,p,h6 {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+.details h6{
+    color: darkblue;
+}
+.blog2 {
+    margin-bottom: 110px;
+}
+.subscribe {
+    background-color: rgb(160, 169, 236);
+}
+.subscribe h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 95px;
+}
+.inp {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 35px;
+    padding-bottom: 110px;
+}.inp ::placeholder{
+    color: black;
+}
+.inp .inp-text {
+    padding: 10px;
+    width: 450px;
+    margin-right: 10px;
+}
+.inp .btn {
+    width: 120px;
+    background-color: blue;
+    color: white;
+    border-style: none;
+}
+.contact {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    /* color: black; */
+    border-bottom: 1px solid black;
+}
+.contact .box-1 {
+    width: 30%;
+    margin-left: 10%;
+}
+.contact .box-4 {
+    margin-right: 10%;
+}
+.contact h6{
+    margin-top: 50px;
+    /* margin-bottom: 10px; */
+}
+
+.contact p{
+    margin-bottom: 65px;
+    font-size: 12px;
+    line-height: 22pt;
+}
+footer p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+.brands {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.brands i {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+    font-size:large;
+    background-color: beige;
+}
