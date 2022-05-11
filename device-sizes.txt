@@ -1,0 +1,7 @@
+
+Devices sizes 
+
+smaller smart phones : 0-480 px
+tablets and larger smart phones : 481-768 px
+Laptops, larger tablets, in landscapes, in small desktops : 769-1279 px
+Larger laptops and monitors : 1280+ px

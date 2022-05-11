@@ -1,6 +1,5 @@
 /* -----------------------------------GLOBAL CSS ---------------------------------------------*/
 
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 * {
@@ -90,7 +89,7 @@ select {
     cursor: pointer;
 }
 .right-nav i {
-    margin-left: 0.625rem;
+    margin-left: 1.3rem;
 }
 .fa-user {
     color: rgb(61, 228, 228);
@@ -143,7 +142,7 @@ select {
     margin-left: 50%;
     border-radius: 2px;
     border: 1px solid white;
-    color: black;
+    color: white;
     background: transparent;
 }
 input:focus{
